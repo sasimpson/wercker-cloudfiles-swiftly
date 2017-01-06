@@ -1,4 +1,4 @@
-box: wercker/python
+box: debian
 build:
     steps: 
         - pip-install:
