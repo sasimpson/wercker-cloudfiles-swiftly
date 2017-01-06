@@ -1,8 +1,9 @@
-box: wercker/python
+box: python
 build:
     steps: 
         - pip-install:
-            requirements-file: "requirements.txt"
+            requirements-file: ""
+            packages_list: "swiftly"
         - script:
             name: echo python information
             code: |
