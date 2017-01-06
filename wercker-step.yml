@@ -13,7 +13,7 @@ properties:
   username:
     type: string
     required: true
-  token:
+  key:
     type: string
     required: true
   container:
