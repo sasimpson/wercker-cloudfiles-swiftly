@@ -1,0 +1,12 @@
+box: wercker/python
+services:
+build:
+    steps: 
+        - pip-install:
+            requirements-file: "requirements.txt"
+        - script:
+            name: echo python information
+            code: |
+                echo "python version $(python --version) running"
+                echo "pip version $(pip --version) running"
+                pip freeze
